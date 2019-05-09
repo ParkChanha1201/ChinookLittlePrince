@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace Chinook.UI
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void BtnResult_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            //todo: 이름에 검색어가 포함된 아티스트의 수를 표시한다.
+            //todo: 기능1번 구현
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+            
         }
     }
 }
