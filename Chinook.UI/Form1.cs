@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Chinook.Data;
 
 namespace Chinook.UI
 {
@@ -15,6 +16,12 @@ namespace Chinook.UI
         public Form1()
         {
             InitializeComponent();
+        }
+        private void BtnRun_Click(object sender, EventArgs e)   //수정중
+        {
+            int value = DataRepository.Album.GetTrackCount(txtKeyword.Text);
+
+            txtResult.Text = value.ToString();
         }
     }
 }
