@@ -85,8 +85,8 @@ namespace Chinook.Data
             using (var context = new ChinookEntities())
             {
                 var query =
-                    from x in context.Tracks
-                    where x.Album.Artist.Name.Contains(keyword)
+                    from x in context.Artists
+                    where x.Name.Contains(keyword)
                     select x;
 
                 //                return query.ToList();
