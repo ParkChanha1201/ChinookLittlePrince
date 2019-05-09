@@ -9,7 +9,7 @@ namespace Chinook.Data
 {
     public class AlbumData : DataRepository
     {
-        public decimal GetPrice(int albumId)
+        public decimal GetAlbumPrice(int albumId)
         {
             using(var context = DataRepository.CreateContext())
             {
