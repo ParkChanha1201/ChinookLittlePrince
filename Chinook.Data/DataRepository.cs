@@ -22,6 +22,7 @@ namespace Chinook.Data
 
         static DataRepository()
         {
+            Album = new AlbumData();
             Playlist = new PlaylistData();
         }
 
