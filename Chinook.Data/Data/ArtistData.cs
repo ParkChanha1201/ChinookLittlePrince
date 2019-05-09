@@ -61,5 +61,18 @@ namespace Chinook.Data
         }
 
         
+        public int GetArtistCount(string keyword)
+        {
+            using (var context = new ChinookEntities())
+            {
+                var query =
+                    from x in context.Artists
+                    where x.Name.Contains(keyword)
+                    select x;
+
+                //                return query.ToList();
+                return query.Count();
+            }
+        }
     }
 }
