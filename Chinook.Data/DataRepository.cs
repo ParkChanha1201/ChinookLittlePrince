@@ -25,7 +25,7 @@ namespace Chinook.Data
             Playlist = new PlaylistData();
         }
 
-        private static AlbumData Album { get; }
+        public static AlbumData Album { get; }
 
         public static PlaylistData Playlist { get; }
     }
