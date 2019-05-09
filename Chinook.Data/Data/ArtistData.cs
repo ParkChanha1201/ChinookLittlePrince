@@ -59,5 +59,18 @@ namespace Chinook.Data
                 return result < 1 ? "Delete 됨" : "Delete 실패함";
             }
         }
+        public int GetArtistCount(string keyword)
+        {
+            using (var context = new ChinookEntities())
+            {
+                var query =
+                    from x in context.Artists
+                    where x.Name.Contains(keyword)
+                    select x;
+
+                //                return query.ToList();
+                return query.Count();
+            }
+        }
     }
 }

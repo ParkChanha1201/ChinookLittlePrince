@@ -20,7 +20,7 @@ namespace Chinook.UI
 
         private void BtnResult_Click(object sender, EventArgs e)
         {
-            int value = DataRepository.Album.GetTrackArtistCount(txtInput.Text);
+            int value = DataRepository.Artist.GetArtistCount(txtInput.Text);
 
             txtResult.Text = value.ToString();
         }
