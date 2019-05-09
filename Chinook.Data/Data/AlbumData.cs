@@ -9,6 +9,17 @@ namespace Chinook.Data
 {
     public class AlbumData : DataRepository
     {
+        public decimal GetPrice(int albumId)
+        {
+            using(var context = DataRepository.CreateContext())
+            {
+                var query = from x in context.Tracks.
+                            Where(x => x.AlbumId == albumId)
+                            select x.UnitPrice;
+                return query.Sum();
+            }
+        }
+
         public int GetCount()
         {
             using (var context = CreateContext())
