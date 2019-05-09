@@ -7,22 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Chinook.Data;
 
 namespace Chinook.UI
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
         private void BtnResult_Click(object sender, EventArgs e)
         {
-            int value = DataRepository.Album.GetTrackCount(txtKeyword.Text);
-
-            txtResult.Text = value.ToString();
+            //todo: Album의 AlbumId를 검색해 가격을 표시한다.
         }
     }
 }

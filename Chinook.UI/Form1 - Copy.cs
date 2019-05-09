@@ -7,22 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Chinook.Data;
 
 namespace Chinook.UI
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void BtnResult_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            int value = DataRepository.Album.GetTrackCount(txtKeyword.Text);
+            //todo: 기능1번 구현
+        }
 
-            txtResult.Text = value.ToString();
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+            
         }
     }
 }

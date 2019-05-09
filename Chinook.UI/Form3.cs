@@ -7,22 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Chinook.Data;
 
 namespace Chinook.UI
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
         }
 
         private void BtnResult_Click(object sender, EventArgs e)
         {
-            int value = DataRepository.Album.GetTrackCount(txtKeyword.Text);
-
-            txtResult.Text = value.ToString();
+            //todo: Artist의 ArtistId를 검색해 해당 가수가 가장 많이 소유하고 있는 곡의 장르를 표시한다.
         }
     }
 }

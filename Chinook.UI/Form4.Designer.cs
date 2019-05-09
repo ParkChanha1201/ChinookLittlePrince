@@ -1,6 +1,6 @@
 ﻿namespace Chinook.UI
 {
-    partial class Form1
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -28,29 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnResult = new System.Windows.Forms.Button();
-            this.txtInput = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtResult = new System.Windows.Forms.TextBox();
+            this.txtInput = new System.Windows.Forms.TextBox();
+            this.btnResult = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnResult
-            // 
-            this.btnResult.Location = new System.Drawing.Point(196, 25);
-            this.btnResult.Name = "btnResult";
-            this.btnResult.Size = new System.Drawing.Size(75, 23);
-            this.btnResult.TabIndex = 0;
-            this.btnResult.Text = "실행";
-            this.btnResult.UseVisualStyleBackColor = true;
-            this.btnResult.Click += new System.EventHandler(this.BtnResult_Click);
-            // 
-            // txtInput
-            // 
-            this.txtInput.Location = new System.Drawing.Point(13, 27);
-            this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(177, 21);
-            this.txtInput.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -63,9 +46,9 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10);
             this.groupBox1.Size = new System.Drawing.Size(284, 261);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "이름에 검색어가 포함된 아티스트의 수를 표시";
             // 
             // txtResult
             // 
@@ -76,14 +59,30 @@
             this.txtResult.Size = new System.Drawing.Size(258, 21);
             this.txtResult.TabIndex = 1;
             // 
-            // Form1
+            // txtInput
+            // 
+            this.txtInput.Location = new System.Drawing.Point(13, 27);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(177, 21);
+            this.txtInput.TabIndex = 1;
+            // 
+            // btnResult
+            // 
+            this.btnResult.Location = new System.Drawing.Point(196, 25);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(75, 23);
+            this.btnResult.TabIndex = 0;
+            this.btnResult.Text = "실행";
+            this.btnResult.UseVisualStyleBackColor = true;
+            // 
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Form4";
+            this.Text = "Form4";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -92,10 +91,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnResult;
-        private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.TextBox txtInput;
+        private System.Windows.Forms.Button btnResult;
     }
 }
-
