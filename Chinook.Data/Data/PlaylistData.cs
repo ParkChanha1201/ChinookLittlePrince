@@ -68,5 +68,16 @@ namespace Chinook.Data
                     return "Delete 실패함";
             }
         }
+
+        public string GetMostGenre(int artistId)
+        {
+            using(var context = DataRepository.CreateContext())
+            {
+                var query = context.Artists.Where(x => x.ArtistId == artistId).GroupBy(genre => Track);
+
+                return null;
+            }
+            
+        }
     }
 }

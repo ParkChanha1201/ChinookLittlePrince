@@ -24,10 +24,13 @@ namespace Chinook.Data
         {
             Album = new AlbumData();
             Playlist = new PlaylistData();
+            Artist = new ArtistData();
         }
 
         public static AlbumData Album { get; }
 
         public static PlaylistData Playlist { get; }
+
+        public static ArtistData Artist { get; }
     }
 }
