@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chinook.Data
 {
-    class DataRepository
+    public class DataRepository
     {
         protected static ChinookEntities CreateContext()
         {
