@@ -59,5 +59,7 @@ namespace Chinook.Data
                 return result < 1 ? "Delete 됨" : "Delete 실패함";
             }
         }
+
+        
     }
 }

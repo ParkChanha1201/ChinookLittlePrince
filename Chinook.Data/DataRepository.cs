@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Chinook.Data.Data;
 
 namespace Chinook.Data
 {
@@ -25,6 +26,7 @@ namespace Chinook.Data
             Album = new AlbumData();
             Playlist = new PlaylistData();
             Artist = new ArtistData();
+            Track = new TrackData();
         }
 
         public static AlbumData Album { get; }
@@ -32,5 +34,7 @@ namespace Chinook.Data
         public static PlaylistData Playlist { get; }
 
         public static ArtistData Artist { get; }
+
+        public static TrackData Track { get; }
     }
 }

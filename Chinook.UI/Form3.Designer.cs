@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtResult = new System.Windows.Forms.TextBox();
+            this.listResultList = new System.Windows.Forms.ListBox();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.btnResult = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -37,7 +37,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtResult);
+            this.groupBox1.Controls.Add(this.listResultList);
             this.groupBox1.Controls.Add(this.txtInput);
             this.groupBox1.Controls.Add(this.btnResult);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -48,16 +48,16 @@
             this.groupBox1.Size = new System.Drawing.Size(284, 261);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "이름에 검색어가 포함된 아티스트의 수를 표시";
+            this.groupBox1.Text = "ArtistId를 검색해 해당 가수의 Track 5개를 표시";
             // 
-            // txtResult
+            // listResultList
             // 
-            this.txtResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(170)))));
-            this.txtResult.ForeColor = System.Drawing.Color.White;
-            this.txtResult.Location = new System.Drawing.Point(13, 54);
-            this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(258, 21);
-            this.txtResult.TabIndex = 1;
+            this.listResultList.FormattingEnabled = true;
+            this.listResultList.ItemHeight = 12;
+            this.listResultList.Location = new System.Drawing.Point(12, 62);
+            this.listResultList.Name = "listResultList";
+            this.listResultList.Size = new System.Drawing.Size(259, 172);
+            this.listResultList.TabIndex = 2;
             // 
             // txtInput
             // 
@@ -93,8 +93,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtResult;
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button btnResult;
+        private System.Windows.Forms.ListBox listResultList;
     }
 }

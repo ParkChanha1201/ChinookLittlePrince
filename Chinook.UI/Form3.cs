@@ -20,9 +20,15 @@ namespace Chinook.UI
 
         private void BtnResult_Click(object sender, EventArgs e)
         {
-            string resultGenre = DataRepository.Artist.GetByPK(int.Parse(txtInput.Text)).Name.ToString();
-            txtResult.Text = resultGenre;
+            List<Track> resultTracks = DataRepository.Track.GetTop5Tracks(int.Parse(txtInput.Text));
 
+            List<string> resultList = new List<string>();
+            foreach (Track resultTrack in resultTracks)
+            {
+                resultList.Add(resultTrack.Name);
+            }
+            listResultList.DataSource = null;
+            listResultList.DataSource = resultList;
         }
     }
 }

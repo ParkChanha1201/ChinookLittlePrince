@@ -77,6 +77,7 @@
     </Compile>
     <Compile Include="DataRepository.cs" />
     <Compile Include="Data\ArtistData.cs" />
+    <Compile Include="Data\TrackData.cs" />
     <Compile Include="Employee.cs">
       <DependentUpon>Chinook.tt</DependentUpon>
     </Compile>
