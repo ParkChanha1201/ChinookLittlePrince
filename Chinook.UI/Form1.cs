@@ -19,7 +19,7 @@ namespace Chinook.UI
         }
         private void BtnRun_Click(object sender, EventArgs e)   //수정중
         {
-            int value = DataRepository.Album.GetTrackCount(txtKeyword.Text);
+            int value = DataRepository.Album.GetTrackArtistCount(txtKeyword.Text);
 
             txtResult.Text = value.ToString();
         }
