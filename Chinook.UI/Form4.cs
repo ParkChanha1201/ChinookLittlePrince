@@ -16,5 +16,11 @@ namespace Chinook.UI
         {
             InitializeComponent();
         }
+          private void BtnResult_Click(object sender, EventArgs e)
+        {
+            int value = DataRepository.Album.GetAlbumCountByArtistName(txtInput.Text);
+
+            txtResult.Text = value.ToString();
+        }
     }
 }
