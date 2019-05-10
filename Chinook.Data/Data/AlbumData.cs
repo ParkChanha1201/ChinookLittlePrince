@@ -87,7 +87,7 @@ namespace Chinook.Data
             {
                 var query =
                     from x in context.Albums
-                    where x.Artist.Name.Contains(keyword) 
+                    where x.Artist.Name.Contains(keyword)
                     select x;
 
                return query.Count();

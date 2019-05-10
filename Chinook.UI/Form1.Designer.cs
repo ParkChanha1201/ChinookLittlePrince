@@ -65,15 +65,16 @@
             this.groupBox1.Size = new System.Drawing.Size(284, 261);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "이름에 검색어가 포함된 아티스트의 수";
             // 
             // txtResult
             // 
             this.txtResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(170)))));
+            this.txtResult.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
             this.txtResult.ForeColor = System.Drawing.Color.White;
             this.txtResult.Location = new System.Drawing.Point(13, 54);
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(258, 21);
+            this.txtResult.Size = new System.Drawing.Size(258, 26);
             this.txtResult.TabIndex = 1;
             // 
             // Form1

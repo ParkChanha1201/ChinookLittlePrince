@@ -48,15 +48,16 @@
             this.groupBox1.Size = new System.Drawing.Size(284, 261);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Album의 AlbumId를 검색해 가격을 표시";
+            this.groupBox1.Text = "Album의 AlbumId를 검색해 가격을 표시한다";
             // 
             // txtResult
             // 
             this.txtResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(170)))));
+            this.txtResult.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
             this.txtResult.ForeColor = System.Drawing.Color.White;
             this.txtResult.Location = new System.Drawing.Point(13, 54);
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(258, 21);
+            this.txtResult.Size = new System.Drawing.Size(258, 26);
             this.txtResult.TabIndex = 1;
             // 
             // txtInput

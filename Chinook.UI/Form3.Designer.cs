@@ -52,11 +52,15 @@
             // 
             // listResultList
             // 
+            this.listResultList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(170)))));
+            this.listResultList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listResultList.ForeColor = System.Drawing.Color.White;
             this.listResultList.FormattingEnabled = true;
-            this.listResultList.ItemHeight = 12;
+            this.listResultList.ItemHeight = 18;
             this.listResultList.Location = new System.Drawing.Point(12, 62);
+            this.listResultList.Margin = new System.Windows.Forms.Padding(5);
             this.listResultList.Name = "listResultList";
-            this.listResultList.Size = new System.Drawing.Size(259, 172);
+            this.listResultList.Size = new System.Drawing.Size(259, 166);
             this.listResultList.TabIndex = 2;
             // 
             // txtInput
