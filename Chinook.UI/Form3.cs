@@ -27,6 +27,7 @@ namespace Chinook.UI
             {
                 resultList.Add(resultTrack.Name);
             }
+
             listResultList.DataSource = null;
             listResultList.DataSource = resultList;
         }

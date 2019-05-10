@@ -48,7 +48,7 @@
             this.groupBox1.Size = new System.Drawing.Size(284, 261);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ArtistId를 검색해 해당 가수의 Track 5개를 표시";
+            this.groupBox1.Text = "ArtistId가 일치하는 Track 5개의 Name을 표시";
             // 
             // listResultList
             // 
